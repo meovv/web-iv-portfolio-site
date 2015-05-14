@@ -1,5 +1,6 @@
 // JavaScript Document
 
+//Mobile Menu
 jQuery(document).ready(function($){
 	var navigation = $('#navigation'),
 	main = navigation.find('ul.menu');
