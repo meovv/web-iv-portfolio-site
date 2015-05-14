@@ -3,27 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="styles/foundation.css">
 <link rel="stylesheet" type="text/css" href="styles/main.css">
-<link rel="stylesheet" type="text/css" href="styles/foundation-5.5.2.custom/css/foundation.css">
+<link rel="stylesheet" type="text/css" href="styles/foundation.min.css">
+<script src="scripts/main.js"></script>
+<script src="scripts/vendor/modernizr.js"></script>
   </head>
   <body>
-    <header>
-      <div class="row">
-      	<div class="small-centered large-uncentered columns">
-        <div class="small-6 medium-2 medium-offset-1 large-2 columns">
-          <img src="http://placehold.it/30x30" alt="morh logo">
+    <header> 
+    <div class="row">
+        <div class="small-centered large-uncentered columns">
+        <div class="small-3 medium-2 medium-offset-1 large-2 columns">
+		<img src="http://placehold.it/30x30" alt="morh logo">
         </div>
         <div class="small-6 medium-4 medium-offset-8 large-4 large-offset-8 columns">
+		<nav id="navigation">
+		<div class="nav-trigger">Menu<span></span></div>
+			<ul class="menu">
+				<li><a href="#home">Home</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+    </div>
+    </div>
+</header>  
+          
+          <!--<nav>
           <ul class="navigation">
-            <li><a href="../index.html#home">Home</a></li>
-            <li><a href="../index.html#projects">Work</a></li>
-            <li><a href="../index.html#about">About</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-        </div>
-      </div>
-    </header>
+         </nav>-->
+
     <div class="landing-space">
     <a id="home"></a>
     <div class="row">
@@ -93,7 +109,7 @@
           <img src="http://placehold.it/200x200" alt="moleskine-project-thumb">
           <h2>Aegaeon Cologne</h2>
           <p>Moleskine wanted an ad campaign that made it a point to target each of their individual product users.</p>
-          <a href="projects/project-aegaeon.html">See more</a>
+          <a href="projects/project-aegaeon-cologne.html">See more</a>
         </div>
       </div>
       <div class="row">
@@ -257,10 +273,8 @@
    </div>
    </footer>
    
-   <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+<script src="scripts/vendor/jquery.js"></script>
+<script src="scripts/foundation.min.js"></script>
+
   </body>
 </html>
