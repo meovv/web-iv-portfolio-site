@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
 /*navigation styles*/
 
 
@@ -7,8 +13,9 @@ header img {
 	margin-top: 40px;
 }
 
+
 nav li {
-	margin-top: -20px;
+	margin-top: 20px;
 }
 	
 .container {
@@ -28,7 +35,7 @@ nav#navigation .nav-trigger {
     display:none;
     position:absolute;
     top:0;
-    right:0;
+	right: 0;
     width:38px;
     height:38px;
     /*background color of menu icon*/
@@ -188,7 +195,7 @@ nav#navigation ul.is-visible {
     transform:scale(1);
     -webkit-transition:-webkit-transform 0.5s,visibility 0 0;
     -moz-transition:-moz-transform 0.5s,visibility 0 0;
-    transition:transform 0.5s,visibility 0 0;
+    transition:transform 0.5s,visibility;
 }
 
 nav#navigation ul.is-visible li a {
@@ -233,6 +240,10 @@ nav#navigation ul li {
 }
 
 /*end of navigation styles*/
+
+/*typography styles*/
+
+/*color styles*/
 
 
 .landing-space, .project-description {
