@@ -43,6 +43,9 @@
 
 /*navigation styles*/
 
+header {
+	width: 100%;
+}
 
 header img {
 	margin-top: 40px;
@@ -57,7 +60,7 @@ nav li {
 	/*change color of header background here*/
 	background-color: white;
 	padding-bottom: 10px;
-	width: 80%;
+	width: 100%;
 	display: inline;
 	position: fixed;
 	z-index: 1 !important;
@@ -293,6 +296,32 @@ nav#navigation {
 
 /*color styles*/
 
+header .container {
+	width: 100%;
+	background-color:#bfe7f6;
+}
+
+
+.landing-space {
+	background-color:#a0dae5;
+}
+
+.projects {
+	background-color:#f6f5fa;
+}
+
+.about {
+	background-color:#a0dae5;
+}
+
+.contact {
+	background-color:#f6f5fa;
+}
+
+footer {
+	background-color:
+}
+
 
 .landing-space, .project-description {
 	margin-top: 150px;
@@ -313,4 +342,3 @@ footer .copyright {
 	padding:0;
 	margin:0;
 }
-
