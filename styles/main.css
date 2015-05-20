@@ -6,6 +6,41 @@
 	box-sizing: border-box; 
 }
 
+
+/*parallax styles*/
+
+.landing-space {
+}
+
+.landing-space .parallax-image {
+	margin-top: -300px;
+	margin-left: 200px;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 40vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0px) scale(1);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+
+/*end of parallax styles*/
+
+
+
 /*navigation styles*/
 
 
@@ -20,6 +55,8 @@ nav li {
 	
 .container {
 	/*change color of header background here*/
+	background-color: white;
+	padding-bottom: 10px;
 	width: 80%;
 	display: inline;
 	position: fixed;
@@ -69,10 +106,12 @@ nav#navigation ul li a {
 
 header img {
 	margin-top: 10px;
+	margin-left: 50px;
 }
 
 nav#navigation {
 	margin-top: 10px;
+	margin-left: 250px;
     position:absolute;
     width:90%;
 }
@@ -234,7 +273,16 @@ nav#navigation ul li.last a:hover {
 }
 
 @media only screen and (max-width : 500px) {
-nav#navigation ul li {
+
+header img {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+nav#navigation {
+	margin-top: 10px;
+	margin-left: 100px;
+    position:absolute;
     width:100%;
 }
 }
@@ -259,5 +307,10 @@ nav#navigation ul li {
 input {
 	width: 100%;
 }
-/* CSS Document */
+/*footer styles*/
+
+footer .copyright {
+	padding:0;
+	margin:0;
+}
 
