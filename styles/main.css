@@ -303,7 +303,22 @@ h2 {
 	color:#288c8e;
 }
 
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color:#288c8e;
+}
+
 p {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #113559;
+}
+
+li {
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
 	line-height: 18px;
@@ -334,11 +349,52 @@ nav a {
 	color: #a0dae5;
 }
 
-input {
-	color:
+input[type=text] {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #113559;
+}
+	
+
+/*placeholder type in form*/
+
+::-webkit-input-placeholder {
+   font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #288c8e;
 }
 
-/*tablet size*/
+:-moz-placeholder { /* Firefox 18- */
+   font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #288c8e; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #288c8e;  
+}
+
+:-ms-input-placeholder {  
+   font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #288c8e;  
+}
+
+/*end of placeholder text in form*/
+
+/*tablet size typography*/
 @media only screen and (max-width : 750px) {
 	h1 {
 	font-family: 'Lato', sans-serif;
@@ -353,10 +409,6 @@ h2 {
 	font-weight: 300;
 	color:#288c8e;
 }
-}
-
-/*mobile size*/
-@media only screen and (max-width : 500px) {
 }
 
 /*end of typography styles*/
