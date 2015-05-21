@@ -9,13 +9,6 @@
 
 /*parallax styles*/
 
-.landing-space {
-}
-
-.landing-space .parallax-image {
-	margin-top: -300px;
-	margin-left: 200px;
-}
 
 .parallax {
   perspective: 1px;
@@ -53,9 +46,9 @@ nav li {
 	margin-top: 20px;
 }
 	
-.container {
+.navigation {
 	/*change color of header background here*/
-	background-color: white;
+	background-color: #113559;
 	padding-bottom: 10px;
 	width: 80%;
 	display: inline;
@@ -76,7 +69,7 @@ nav#navigation .nav-trigger {
     width:38px;
     height:38px;
     /*background color of menu icon*/
-	background:#212121;
+	background:#a0dae5;
     overflow:hidden;
     text-indent:100%;
     white-space:nowrap;
@@ -103,6 +96,9 @@ nav#navigation ul li a {
 
 @media only screen and (max-width : 900px) {
 
+header {
+	background-color: #113559;
+}
 
 header img {
 	margin-top: 10px;
@@ -126,7 +122,7 @@ nav#navigation .nav-trigger span {
     width:20px;
     height:2px;
 	/*background color of menu lines*/
-    background:#FFF;
+    background:#113559;
     top:18px;
     left:50%;
     margin-left:-10px;
@@ -173,12 +169,12 @@ nav#navigation .nav-trigger span::after {
 }
 
 nav#navigation .nav-trigger.open span {
-    background:rgba(255,255,255,0);
+    background:#a0dae5;
 	/*black*/
 }
 
 nav#navigation .nav-trigger.open span::before,.nav-trigger.open span::after {
-    background:#FFF;
+    background:#113559;
 	/*changes color of x in menu icon*/
 }
 
@@ -205,7 +201,7 @@ nav#navigation ul {
     position:absolute;
     right:0;
     top:38px;
-    background:#212121;
+    background:#113559;
     visibility:hidden;
     z-index:50;
     -webkit-backface-visibility:hidden;
@@ -249,18 +245,20 @@ nav#navigation ul li {
 nav#navigation ul li a {
     width:100%;
     padding:10px 0;
-    color:#FFF;
+    color:#a0dae5;
     visibility:hidden;
     border-radius:0;
 }
 
 nav#navigation ul li a:hover {
-    border:0;
+    border:10px;
+	border-color: #a0dae5;
 }
 
 nav#navigation ul li.last a {
     background:none;
-    border:0;
+    border:10px;
+	border-color: white;
     display:block;
     padding:15px 0;
     color:#FFF;
@@ -268,7 +266,8 @@ nav#navigation ul li.last a {
 }
 
 nav#navigation ul li.last a:hover {
-    border:0;
+    border:10px;
+	border-color: white;
 }
 }
 
@@ -291,10 +290,88 @@ nav#navigation {
 
 /*typography styles*/
 
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	color:#288c8e;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color:#288c8e;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #113559;
+}
+
+.call-out {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 300;
+	color:#113559;
+}
+
+a { 
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #288c8e;
+}
+	
+
+nav a { 
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #a0dae5;
+}
+
+input {
+	color:
+}
+
+/*end of typography styles*/
+
 /*color styles*/
 
+.navigation {
+	background-color: #113559;
+}
 
-.landing-space, .project-description {
+
+#home {
+	background-color:#a0dae5;
+}
+
+#portfolio-projects {
+	background-color:#f6f5fa;
+}
+
+#about {
+	background-color:#a0dae5;
+}
+
+#contact {
+	background-color:#f6f5fa;
+}
+
+footer {
+	background-color:
+}
+
+/*end of color styles*/
+
+
+#home, .project-description {
 	margin-top: 150px;
 }
 
