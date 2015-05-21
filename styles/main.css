@@ -36,7 +36,6 @@
 
 /*navigation styles*/
 
-
 header img {
 	margin-top: 40px;
 }
@@ -337,6 +336,14 @@ nav a {
 
 input {
 	color:
+}
+
+/*tablet size*/
+@media only screen and (max-width : 900px) {
+}
+
+/*mobile size*/
+@media only screen and (max-width : 500px) {
 }
 
 /*end of typography styles*/
