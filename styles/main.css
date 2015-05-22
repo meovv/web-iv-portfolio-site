@@ -415,6 +415,17 @@ h2 {
 
 /*color styles*/
 
+header:after {
+	clear:both;
+	content: " ";
+  display: table;
+}
+
+header {
+	width: 100%;
+	background-color: red;
+}
+
 body {
 	background-color: #a0dae5;
 }
