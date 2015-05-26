@@ -17,6 +17,7 @@
   overflow-y: auto;
 }
 .parallax__layer {
+	background:url(../../parallax-test/images/arrow-thin.png);
   position: absolute;
   top: 0;
   right: 0;
@@ -36,6 +37,12 @@
 
 /*navigation styles*/
 
+header {
+	position: fixed;
+	top:0;
+	z-index:999;
+}
+
 header img {
 	margin-top: 40px;
 }
@@ -51,7 +58,6 @@ nav li {
 	padding-bottom: 10px;
 	width: 80%;
 	display: inline;
-	position: fixed;
 	z-index: 1 !important;
 }
 
@@ -423,7 +429,7 @@ header:after {
 
 header {
 	width: 100%;
-	background-color: red;
+	background-color: #113559;
 }
 
 body {
@@ -431,7 +437,6 @@ body {
 }
 
 .navigation {
-	background-color: #113559;
 }
 
 
