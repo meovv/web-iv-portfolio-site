@@ -73,54 +73,171 @@
 	z-index: 10;
 }
 .parallax__layer--fore {
-    -webkit-transform: translateZ(60px) scale(1);
-    transform: translateZ(60px) scale(1);
+    -webkit-transform: translateZ(80px) scale(1);
+    transform: translateZ(80px) scale(1);
     top: 0;
 	right: 0;
 	left: 0;
 	bottom: 0;
-	z-index: 1;
 }
 
 .parallax__layer--deep {
-    -webkit-transform: translateZ(20px) scale(1);
-    transform: translateZ(20px) scale(1);
+    -webkit-transform: translateZ(60px) scale(1);
+    transform: translateZ(60px) scale(1);
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-	z-index: 1;
 }
 
 /*positioning*/
-.parallax__layer--fore--position {
+.parallax__layer--home--large--middle {
 	position: absolute;
-	top: -60px;
+	top: -90px;
 	right: 0;
-	left: 300px;
-	bottom: 0;
+	left: 200px;
+	bottom: -60px;
 }
 
-.parallax__layer--deep--position {
+.parallax__layer--see--medium--right {
 	position: absolute;
-	top: 700px;
+	top: 900px;
 	right: 0;
-	left: 525px;
-	bottom: -700px;
+	left: 540px;
+	bottom: -900px;
 	
 }
 
+.parallax__layer--see--medium--left {
+	position: absolute;
+	top: 1400px;
+	right: 0;
+	left: 100px;
+	bottom: -1400px;
+}
+
+.parallax__layer--see--small--middle {
+	position: absolute;
+	top: 2100px;
+	right: 0;
+	left: 700px;
+	bottom: -2100px;
+}
+
+.parallax__layer--see--large--right {
+	position: absolute;
+	top: 2500px;
+	right: -390px;
+	left: 430px;
+	bottom: -2900px;
+}
+
+.parallax__layer--about--medium--left {
+	position: absolute;
+	top: 3300px;
+	right: 0;
+	left: 50px;
+	bottom: -3300px;
+	
+}
+
+.parallax__layer--about--medium--right {
+	position: absolute;
+	top: 4300px;
+	right: 0;
+	left: 740px;
+	bottom: -4300px;
+}
+
+.parallax__layer--about--small--middle {
+	position: absolute;
+	top: 4600px;
+	right: 0;
+	left: 40px;
+	bottom: -4600px;
+}
+
+.parallax__layer--about--medium--middle {
+	position: absolute;
+	top: 5000px;
+	right: 0;
+	left: 540px;
+	bottom: -5000px;
+}
+
+.parallax__layer--contact--medium--right {
+	position: absolute;
+	top: 5700px;
+	right: 0;
+	left: 840px;
+	bottom: -5700px;
+}
+
+.parallax__layer--contact--large--left{
+	position: absolute;
+	top: 5400px;
+	right: 200px;
+	left: -200px;
+	bottom: -5600px;
+}
+
+.parallax__layer--contact--small--left{
+	position: absolute;
+	top: 6500px;
+	right: 0;
+	left: 0;
+	bottom: -6600px;
+	
+}
+
+.parallax__layer--contact--medium--middle{
+	position: absolute;
+	top: 6800px;
+	right: 0;
+	left: 500px;
+	bottom: -6600px;
+}
+
+.parallax__layer--contact--large--right{
+	position: absolute;
+	top: 6000px;
+	right: -650px;
+	left: 650px;
+	bottom: -6300px;
+}
+
+/*project pages parallax*/
+
+.parallax__layer--project--medium--left{
+	position: absolute;
+	top: -50px;
+	right: 0;
+	left: 0px;
+	bottom: 50px;
+}
+
+.parallax__layer--project--medium--right {
+	position: absolute;
+	top: 600px;
+	right: -500px;
+	left: 500px;
+	bottom: -600px;
+}
+
+
+
+
 /*symbol sizes*/
 .small {
-	background-size: 50%;
+	background-size: 35%;
 }
 
 .medium {
-	background-size:75%;
+	background-size:60%;
 }
 
 .large {
-	background-size: 100%;
+	background-size: 80%;
 }
 
 /*end of parallax styles*/
@@ -388,7 +505,7 @@ h3 {
 p {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     font-weight: 400;
     color: #113559;
 }
@@ -419,6 +536,15 @@ nav a {
     color: #a0dae5;
 }
 
+.skills-icons h3 {
+	text-align:center;
+}
+
+.process-icons h3 {
+}
+
+/*form typography*/
+
 input[type=text] {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -426,6 +552,15 @@ input[type=text] {
     font-weight: 400;
     color: #113559;
 }
+
+button[type=submit] {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #113559;
+}
+
 /*placeholder type in form*/
 
 ::-webkit-input-placeholder {
@@ -461,6 +596,8 @@ input[type=text] {
     color: #288c8e;
 }
 /*end of placeholder text in form*/
+/*end of form typography*/
+
 
 
 
@@ -497,6 +634,7 @@ header {
     width: 100%;
     background-color: #113559;
 }
+
 body {
     background-color: #a0dae5;
 }
@@ -506,6 +644,7 @@ body {
 #portfolio-projects {
     background-color: #f6f5fa;
 }
+
 #about {
     background-color: #a0dae5;
 }
@@ -518,7 +657,43 @@ footer {
 /*end of color styles*/
 
 
+/*hover styles*/
+header a:hover {
+	color: #a0dae5;
+	cursor:url(../images/hover-cursor.png), pointer !important;
+}
 
+#portfolio-projects a:hover {
+	color: #288c8e;
+	cursor:url(../images/hover-cursor.png), pointer !important;
+}
+
+#contact a:hover {
+	cursor:url(../images/hover-cursor.png), pointer !important;
+}
+
+button[type=submit]:hover  {
+	width: 90px;
+	height: 40px;
+	background-color: #113559 !important;
+	color: #f6f5fa;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
+	padding: 0;
+	transition: 0s !important;
+	cursor:url(../images/hover-cursor.png), pointer !important;
+}
+
+.project-description a:hover {
+	cursor:url(../images/hover-cursor.png), pointer !important;
+}
+
+footer a:hover {
+	cursor:url(../images/hover-cursor.png), pointer !important;
+	
+}
+/*end of hover styles*/
 
 /*spacing styles*/
 
@@ -529,8 +704,8 @@ header {
     margin-bottom: 50px;
 }
 #home {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 #home img {
     padding-top: 50px;
@@ -548,13 +723,62 @@ h2 {
 #portfolio-projects img {
     padding-top: 50px;
 }
+
+.midwest-nuclear-research {
+	margin-top: -140px;
+}
+
+.white-fang {
+	padding-top: 140px;
+}
+
+.gorilla-grocery {
+	margin-top: -140px;
+}
+
+.details {
+	padding-top: 140px;
+}
+
+.human {
+	padding-top: 140px;
+}
+
+.sweet-cellars {
+	margin-top: -140px;
+}
+
+
 #about {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom:;
 }
 #about p {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 }
+
+.skills-icons {
+	padding-bottom: 110px;
+}
+
+.skills-icons img {
+	margin-top: -10px;
+	margin-bottom: 15px;
+}
+
+.brainstorm {
+	margin-top: -240px;
+}
+
+.concept {
+	margin-top: -180px;
+}
+
+.create {
+	margin-top: -260px;
+}
+
+
 #contact {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -575,14 +799,153 @@ h2 {
     padding: 10px;
 }
 
+footer {
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+/*tablet spacing styles*/
+
+@media only screen and (max-width: 750px) {
+	
+	.brainstorm {
+		margin-top: -350px;
+}
+
+.create {
+	margin-top: -350px;
+}
+}
+
+/*mobile spacing styles*/
+@media only screen and (max-width: 500px) {
+
+#portfolio-projects {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#about {
+	padding-top: 40px;
+	padding-bottom: 0px;
+}
+
+#about p {
+	padding-bottom: 20px;
+}
+
+.midwest-nuclear-research {
+	margin-top: 0;
+}
+
+.white-fang {
+	padding-top: 0;
+}
+
+.gorilla-grocery {
+	margin-top: 0;
+}
+
+.details {
+	padding-top: 0;
+}
+
+.human {
+	padding-top: 0;
+}
+
+.sweet-cellars {
+	margin-top: 0;
+}
+
+.skills-icons img {
+	margin-bottom: 5px;
+}
+
+.skills-icons h3 {
+	padding-bottom: 40px;
+}
+
+#contact {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#contact h1, #contact p {
+	padding-bottom: 10px;
+}
+	
+
+#contact img {
+	padding-bottom: 10px;
+}
+
+}
+
 
 
 
 /*form styles*/
 
-input {
-    width: 100%;
+input[type=text] {
+	width: 100%;
+	background-color: #f6f5fa !important;
+	border: solid 2px #a0dae5 !important;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
+	padding: 4px;
+	
 }
+
+.message-input input {
+	width: 100%;
+	padding-bottom: 145px;
+	padding-top: 20px;
+}
+
+input:focus {
+	
+	border: solid 2px #113559 !important;
+}
+
+
+button[type=submit] {
+	width: 90px;
+	height: 40px;
+	background-color: #f6f5fa !important;
+	border: solid 3px #113559 !important;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
+	padding: 0;
+}
+
+
+/*image and icon styles*/
+
+header img {
+	width: 30px;
+}
+
+#home img {
+	width: 250px;
+}
+
+.process-icons img {
+	width: 200px;
+	padding-bottom: 20px;
+}
+
+#contact img {
+	width: 50px;
+	padding-bottom: 10px;
+}
+
+footer img {
+	width: 30px;
+}
+
 
 
 
