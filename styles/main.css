@@ -654,6 +654,10 @@ body {
 footer {
     background-color:
 }
+
+body .project-description{	
+	background-color: #f6f5fa;
+}
 /*end of color styles*/
 
 
@@ -787,7 +791,7 @@ h2 {
     list-style: none;
 }
 .project-description {
-    margin-top: 130px;
+    margin-top: 90px;
 }
 .project-description h1 {
     margin-bottom: 50px;
@@ -796,7 +800,12 @@ h2 {
     padding-bottom: 20px;
 }
 .project-description img {
-    padding: 10px;
+    padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.project-description a {
+	padding-bottom: 20px;
 }
 
 footer {
