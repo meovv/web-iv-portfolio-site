@@ -638,17 +638,17 @@ header {
 body {
     background-color: #a0dae5;
 }
-.navigation {} #home {
+.navigation {} #home-space {
     background-color: #a0dae5;
 }
 #portfolio-projects {
     background-color: #f6f5fa;
 }
 
-#about {
+#about-space {
     background-color: #a0dae5;
 }
-#contact {
+#contact-space {
     background-color: #f6f5fa;
 }
 footer {
@@ -690,7 +690,7 @@ header a:hover {
 
 
 
-#contact a:hover {
+#contact-space a:hover {
 	cursor:url(../images/hover-cursor.png), pointer !important;
 }
 
@@ -713,9 +713,33 @@ button[type=submit]:hover  {
 
 footer a:hover {
 	cursor:url(../images/hover-cursor.png), pointer !important;
+}
+	
+.project-buttons a {
+		color: #113559;
+	background-color: #f6f5fa !important;
+	border: solid 3px #113559 !important;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
 	
 }
+
+.project-buttons a:hover {
+	background-color: #113559 !important;
+	color: #f6f5fa;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
+	transition: 0s !important;
+}
 /*end of hover styles*/
+
+
 
 /*spacing styles*/
 
@@ -725,11 +749,11 @@ body {
 header {
     margin-bottom: 50px;
 }
-#home {
+#home-space {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-#home img {
+#home-space img {
     padding-top: 50px;
 }
 h1 {
@@ -771,11 +795,11 @@ h2 {
 }
 
 
-#about {
+#about-space {
     padding-top: 100px;
     padding-bottom:;
 }
-#about p {
+#about-space p {
     padding-bottom: 80px;
 }
 
@@ -801,11 +825,11 @@ h2 {
 }
 
 
-#contact {
+#contact-space {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-#contact ul {
+#contact-space ul {
     list-style: none;
 }
 .project-description {
@@ -818,12 +842,17 @@ h2 {
     padding-bottom: 20px;
 }
 .project-description img {
-    padding-top: 20px;
-	padding-bottom: 20px;
+    padding-top: 40px;
+	padding-bottom: 40px;
 }
 
-.project-description a {
-	padding-bottom: 20px;
+.project-buttons {
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+
+.project-buttons a {
+	margin-left: 120px;
 }
 
 footer {
@@ -842,6 +871,16 @@ footer {
 .create {
 	margin-top: -350px;
 }
+
+.project-buttons {
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+
+.project-buttons a {
+	margin-left: 50px;
+}
+
 }
 
 /*mobile spacing styles*/
@@ -852,12 +891,12 @@ footer {
 	padding-bottom: 20px;
 }
 
-#about {
+#about-space {
 	padding-top: 40px;
 	padding-bottom: 0px;
 }
 
-#about p {
+#about-space p {
 	padding-bottom: 20px;
 }
 
@@ -893,18 +932,27 @@ footer {
 	padding-bottom: 40px;
 }
 
-#contact {
+#contact-space {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-#contact h1, #contact p {
+#contact-space h1, #contact p {
 	padding-bottom: 10px;
 }
 	
 
-#contact img {
+#contact-space img {
 	padding-bottom: 10px;
+}
+
+.project-buttons {
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+
+.project-buttons a {
+	margin-left: 20px;
 }
 
 }
@@ -955,7 +1003,7 @@ header img {
 	width: 30px;
 }
 
-#home img {
+#home-space img {
 	width: 250px;
 }
 
@@ -964,17 +1012,21 @@ header img {
 	padding-bottom: 20px;
 }
 
-#portfolio-projects img {
-/*-webkit-border-radius: 10%;
--moz-border-radius: 10%;*/
-border-top-left-radius: 10%;
-border-top-right-radius: 10%;
-border-bottom-left-radius: 10%;
-border-bottom-right-radius: 10%;
+.moleskine img, .white-fang img, .gorilla-grocery img, .aegaeon img, .human img {
+-webkit-border-radius: 10%;
+-moz-border-radius: 10%;
+border-radius: 10%;
 overflow: auto;
 }
 
-#contact img {
+.midwest-nuclear-research img, .aviatrix img, .details img, .sweet-cellars img, .sourpuss-studio img {
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+overflow: auto;
+}
+
+#contact-space img {
 	width: 50px;
 	padding-bottom: 10px;
 }
