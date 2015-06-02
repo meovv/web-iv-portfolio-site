@@ -213,17 +213,32 @@
 	top: -50px;
 	right: 0;
 	left: 0px;
-	bottom: 50px;
+	bottom: 20px;
 }
 
 .parallax__layer--project--medium--right {
 	position: absolute;
-	top: 600px;
+	top: 800px;
 	right: -500px;
 	left: 500px;
-	bottom: -600px;
+	bottom: -900px;
 }
 
+.parallax__layer--project--small--left {
+	position: absolute;
+	top: 1500px;
+	right: 0px;
+	left: 0px;
+	bottom: -1300px;
+}
+
+.parallax__layer--project--large--middle {
+	position: absolute;
+	top: 2400px;
+	right: -400px;
+	left: 400px;
+	bottom: -2600px;
+}
 
 
 
@@ -893,7 +908,6 @@ footer {
 
 #about-space {
 	padding-top: 40px;
-	padding-bottom: 0px;
 }
 
 #about-space p {
@@ -934,7 +948,6 @@ footer {
 
 #contact-space {
 	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 #contact-space h1, #contact p {
