@@ -190,7 +190,7 @@
 	top: 7500px;
 	right: 0;
 	left: 500px;
-	bottom: -7500px;
+	bottom: -7300px;
 }
 
 .parallax__layer--contact--large--right{
@@ -743,6 +743,27 @@ footer a:hover {
 	border-radius: 5px !important;
 	transition: 0s !important;
 }
+
+.linked-in:hover {
+	fill: #288c8e;
+}
+
+.instagram:hover {
+	fill: #288c8e;
+}
+
+.facebook:hover {
+	fill: #288c8e;
+}
+
+svg {
+	width: 50px;
+}
+
+footer svg {
+	width: 40px;
+}
+
 /*end of hover styles*/
 
 
@@ -878,7 +899,6 @@ h2 {
 
 footer {
 	padding-top: 30px;
-	padding-bottom: 10px;
 }
 
 /*tablet spacing styles*/
@@ -902,6 +922,11 @@ footer {
 	margin-left: 50px;
 }
 
+footer {
+	padding: 0px;
+	margin: 0px;
+}
+
 }
 
 /*mobile spacing styles*/
@@ -909,7 +934,39 @@ footer {
 
 #portfolio-projects {
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
+}
+
+.midwest-nuclear-research {
+	margin-top: 0px;
+}
+
+.white-fang {
+	margin-top: 0px;
+}
+
+.gorilla-grocery {
+	margin-top: 0px;
+}
+
+.details {
+	padding-top: 0px;
+}
+
+.aegaeon {
+	margin-top: 0px;
+}
+
+.sweet-cellars {
+	margin-top: 0px;
+}
+
+.human {
+	padding-top: 0px;
+}
+
+.sourpuss-studio {
+	margin-top: 0px;
 }
 
 #about-space {
@@ -920,28 +977,8 @@ footer {
 	padding-bottom: 20px;
 }
 
-.midwest-nuclear-research {
-	margin-top: 0;
-}
-
-.white-fang {
-	padding-top: 0;
-}
-
-.gorilla-grocery {
-	margin-top: 0;
-}
-
-.details {
-	padding-top: 0;
-}
-
-.human {
-	padding-top: 0;
-}
-
-.sweet-cellars {
-	margin-top: 0;
+.skills-icons {
+	padding: 0px;
 }
 
 .skills-icons img {
@@ -966,6 +1003,19 @@ footer {
 	padding-bottom: 10px;
 }
 
+.project-description {
+	margin-top: 0px;
+}
+
+.project-description h1 {
+	padding-top: 60px;
+	padding-bottom: 0px;
+}
+
+.project-description p {
+	padding-bottom: 0px;
+}
+
 .project-buttons {
 	padding-top: 50px;
 	padding-bottom: 80px;
@@ -973,6 +1023,11 @@ footer {
 
 .project-buttons a {
 	margin-left: 20px;
+}
+
+footer {
+	padding: 0px;
+	margin: 0px;
 }
 
 }
