@@ -7,6 +7,9 @@
       <link rel="stylesheet" type="text/css" href="styles/foundation.css">
       <link rel="stylesheet" type="text/css" href="styles/foundation.min.css">
       <link rel="stylesheet" type="text/css" href="styles/main.css">
+      	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="styles/ie-styles.css">
+		<![endif]-->
       <script src="scripts/main.js"></script>
       <script src="scripts/vendor/modernizr.js"></script>
       <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
@@ -92,7 +95,7 @@
                <div class="row">
                   <div class="small-centered small-8 medium-uncentered medium-4 medium-offset-1 large-uncentered columns">
                   	<div class="white-fang">
-                     <a href="projects/project-white-fang.html"><img src="http://placehold.it/200x200" alt="white fang book cover thumb"></a>
+                     <a href="projects/project-white-fang.html"><img src="http://placehold.it/900x900" alt="white fang book cover thumb"></a>
                      <h2>white fang</h2>
                      <p>Moleskine wanted an ad campaign that made it a point to target each of their individual product users.</p>
                      <a href="projects/project-white-fang.html">see more</a>
@@ -242,15 +245,15 @@
            <div class="parallax__layer--base"> 
             <div class="skills-icons">
                <div class="row"> 
-               	<div class="small-centered small-6 medium-uncentered medium-4 columns">
+               	<div class="small-centered small-6 medium-uncentered medium-4 columns photography">
                      <img src="images/photography-skill-icon.svg" alt="photography skill icon">
                      <h3>photography</h3>
                   </div>                 
-                  <div class="small-centered small-6 medium-uncentered medium-4 columns">
+                  <div class="small-centered small-6 medium-uncentered medium-4 columns branding">
                      <img src="images/branding-skill-icon.svg" alt="branding skill icon">
                      <h3>branding</h3>
                   </div>
-                  <div class="small-centered small-6 medium-uncentered medium-4 columns">
+                  <div class="small-centered small-6 medium-uncentered medium-4 columns front-end">
                      <img src="images/web-skill-icon.svg" alt="web development skill icon">
                      <h3>front end web</h3>
                   </div>
@@ -271,10 +274,6 @@
                   </div>
                </div><!--end of row-->
                <div class="row">
-               <div class="small-centered small-10 medium-7 medium-centered columns">
-                  <p>WRITE PARAGRAPH ABOUT PROCESS. I am an ambitious, positive, and dedicated creative. Since a young age my passions have lied in any and all sorts of creative expression. When asked how I became interested in becoming a designer my answer has always started with, “It was a wonderful accident.” Since that wonderful accident, I haven’t looked back.</p>
-               </div><!--end of about information column-->
-            </div><!--end of row-->
             <div class="process-icons">
                <div class="row">
                	<div class="research">
@@ -345,36 +344,27 @@
                <div class="hide-for-small-only">
                   <div class="medium-6 medium-offset-1 columns">
                      <div class="contact-form">
-                        <form>
+                       <form method="post" action="contact-engine.php">
                            <div class="row">
                               <div class="medium-12 columns">
-                                 <input type="text" name="name" placeholder="name">
-                                 <input type="text" name="email" placeholder="email">
-                              </div>
-                              <!--end of name and email input column-->
-                           </div>
-                           <!--end of row-->
+                                 <input type="text" name="name" placeholder="name" id="Name"/>
+                                 <input type="text" name="email" placeholder="email" id="Email"/>
+                              </div><!--end of name and email input column-->
+                           </div><!--end of row-->
                            <div class="row">
                               <div class="medium-12 columns message-input">
-                                 <input type="text" name="message" placeholder="send us a message!">
-                              </div>
-                              <!--end of message input column-->
-                           </div>
-                           <!--end of row-->
+                                 <textarea name="Message" placeholder="send us a message!" id="Message"></textarea>
+                              </div><!--end of message input column-->
+                           </div><!--end of row-->
                            <div class="row">
                               <div class="medium-4 columns">
-                                 <button type="submit" value="Send" id="submit">send</button>
-                              </div>
-                              <!--end of send button column-->
-                           </div>
-                           <!--end of row-->
+                                 <input type="submit" name="submit" value="send" class="submit"/>
+                              </div><!--end of send button column-->
+                           </div><!--end of row-->
                         </form>
-                     </div>
-                     <!--end of contact form-->
-                  </div>
-                  <!--end of contact form column-->
-               </div>
-               <!--end of contact form visibility class-->
+                     </div><!--end of contact form-->
+                  </div><!--end of contact form column-->
+               </div><!--end of contact form visibility class-->
                <div class="small-centered small-10 medium-uncentered medium-5 large-uncentered columns">
                   <p>Have any questions, concerns, or thoughts? Send me a quick message or email! I'll be sure to get back in touch with you as soon as possible. I'm also available to be contacted at any of the social media sites below.</p>
                   <div class="contact-information">
@@ -408,10 +398,9 @@
             
          
          
-         <div class="parallax__layer--base">
+         <div class="parallax__layer--base hide-for-medium-down">
          <footer>
             <div class="row">
-               <div class="hide-for-small-only">
                   <div class="medium-3 columns">
                      <p>555-5555<br>info@morhdesign.com</p>
                   </div>
@@ -424,7 +413,6 @@
                      <p>Copyright 2015</p>
                   </div>
                </div>
-            </div>
          </footer>
       </div><!--end of base layer-->
       </div><!--end of parallax-->

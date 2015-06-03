@@ -15,7 +15,6 @@
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 300px;
-    transform-origin-x: 100%;
 }
 
 /*symbols*/
@@ -27,7 +26,6 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    transform-origin-x: 100%;
 }
 
 .parallax__layer--arrow--thick {
@@ -38,7 +36,6 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    transform-origin-x: 100%;
 }
 
 
@@ -50,7 +47,6 @@
     bottom: 0;
     left: 0;
 	z-index: 1;
-    transform-origin-x: 100%;
 }
 
 .parallax__layer--plus--thick{
@@ -61,7 +57,6 @@
     bottom: 0;
     left: 0;
 	z-index: 1;
-    transform-origin-x: 100%;
 }
 
 /*layers*/
@@ -167,10 +162,10 @@
 
 .parallax__layer--contact--medium--right {
 	position: absolute;
-	top: 5700px;
+	top: 6200px;
 	right: 0;
 	left: 840px;
-	bottom: -5700px;
+	bottom: -6200px;
 }
 
 .parallax__layer--contact--large--left{
@@ -192,18 +187,18 @@
 
 .parallax__layer--contact--medium--middle{
 	position: absolute;
-	top: 6800px;
+	top: 7500px;
 	right: 0;
 	left: 500px;
-	bottom: -6600px;
+	bottom: -7500px;
 }
 
 .parallax__layer--contact--large--right{
 	position: absolute;
-	top: 6000px;
+	top: 6600px;
 	right: -650px;
 	left: 650px;
-	bottom: -6300px;
+	bottom: -6900px;
 }
 
 /*project pages parallax*/
@@ -568,7 +563,7 @@ input[type=text] {
     color: #113559;
 }
 
-button[type=submit] {
+input[type=submit] {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -666,9 +661,6 @@ body {
 #contact-space {
     background-color: #f6f5fa;
 }
-footer {
-    background-color:
-}
 
 body .project-description{	
 	background-color: #f6f5fa;
@@ -693,7 +685,6 @@ header a:hover {
   transition: all 300ms linear;
  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform: scale3d(0);
   background: #000;
   margin: 2em auto;
 }
@@ -709,7 +700,7 @@ header a:hover {
 	cursor:url(../images/hover-cursor.png), pointer !important;
 }
 
-button[type=submit]:hover  {
+input[type=submit]:hover  {
 	width: 90px;
 	height: 40px;
 	background-color: #113559 !important;
@@ -786,45 +777,60 @@ h2 {
 }
 
 .midwest-nuclear-research {
-	margin-top: -140px;
+	margin-top: -190px;
 }
 
 .white-fang {
-	padding-top: 140px;
+	margin-top: 200px;
 }
 
 .gorilla-grocery {
-	margin-top: -140px;
+	margin-top: -180px;
 }
 
 .details {
-	padding-top: 140px;
+	padding-top: 160px;
 }
 
-.human {
-	padding-top: 140px;
+.aegaeon {
+	margin-top: -180px;
 }
 
 .sweet-cellars {
-	margin-top: -140px;
+	margin-top: -180px;
 }
 
+.human {
+	padding-top: 180px;
+}
+
+.sourpuss-studio {
+	margin-top: -180px;
+}
 
 #about-space {
     padding-top: 100px;
-    padding-bottom:;
 }
+
 #about-space p {
     padding-bottom: 80px;
 }
 
 .skills-icons {
-	padding-bottom: 110px;
+	padding-bottom: 140px;
 }
 
 .skills-icons img {
 	margin-top: -10px;
 	margin-bottom: 15px;
+}
+
+.photography img {
+	padding-bottom: 15px;
+}
+
+.branding img {
+	padding-bottom: 25px;
 }
 
 .brainstorm {
@@ -857,8 +863,8 @@ h2 {
     padding-bottom: 20px;
 }
 .project-description img {
-    padding-top: 40px;
-	padding-bottom: 40px;
+    padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .project-buttons {
@@ -948,6 +954,7 @@ footer {
 
 #contact-space {
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #contact-space h1, #contact p {
@@ -986,19 +993,25 @@ input[type=text] {
 	
 }
 
-.message-input input {
+.message-input textarea {
 	width: 100%;
-	padding-bottom: 145px;
+	height: 165px;
 	padding-top: 20px;
+	background-color: #f6f5fa !important;
+	border: solid 2px #a0dae5 !important;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
+	padding: 4px;
 }
 
-input:focus {
+input:focus, textarea:focus {
 	
 	border: solid 2px #113559 !important;
 }
 
 
-button[type=submit] {
+input[type=submit] {
 	width: 90px;
 	height: 40px;
 	background-color: #f6f5fa !important;
