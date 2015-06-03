@@ -801,7 +801,7 @@ h2 {
 	margin-top: -190px;
 }
 
-.white-fang {
+.san-antonio-zoo {
 	margin-top: 200px;
 }
 
@@ -923,8 +923,8 @@ footer {
 }
 
 footer {
-	padding: 0px;
-	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 }
@@ -941,7 +941,7 @@ footer {
 	margin-top: 0px;
 }
 
-.white-fang {
+.san-antonio-zoo {
 	margin-top: 0px;
 }
 
@@ -1093,7 +1093,7 @@ header img {
 	padding-bottom: 20px;
 }
 
-.moleskine img, .white-fang img, .gorilla-grocery img, .aegaeon img, .human img {
+.moleskine img, .san-antonio-zoo img, .gorilla-grocery img, .aegaeon img, .human img {
 -webkit-border-radius: 10%;
 -moz-border-radius: 10%;
 border-radius: 10%;
