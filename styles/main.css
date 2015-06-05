@@ -11,6 +11,7 @@
 /*parallax styles*/
 
 .parallax {
+	-webkit-transform: translate3d(0,0,0px);	
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -19,6 +20,8 @@
 
 /*symbols*/
 .parallax__layer--arrow--thin {
+	-webkit-transform: translate3d(0,0,0px);	
+	transform: translate3d(0,0,0px);
     background: url(../images/arrow-thin.svg) no-repeat;
     position: absolute;
     top: 0;
@@ -28,29 +31,9 @@
     z-index: 1;
 }
 
-.parallax__layer--arrow--thick {
-	 background: url(../images/arrow-thick.svg) no-repeat;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
-
 .parallax__layer--plus--thin {
+	-webkit-transform: translate3d(0,0,0px);
     background: url(../images/plus-thin.svg) no-repeat;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-	z-index: 1;
-}
-
-.parallax__layer--plus--thick{
-	background: url(../images/plus-thin.svg) no-repeat;
     position: absolute;
     top: 0;
     right: 0;
@@ -65,20 +48,15 @@
     -moz-transform: translateZ(0);
     transform: translateZ(0);
 	position: relative;
-	z-index: 10;
-}
-.parallax__layer--fore {
-    -webkit-transform: translateZ(80px) scale(1);
-    transform: translateZ(80px) scale(1);
-    top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
+	z-index: 9 !important;
 }
 
 .parallax__layer--deep {
+	-webkit-transform: translate3d(0,0,0px);	
+	transform: translate3d(0,0,0px);
+	/*what makes parallax elements move
     -webkit-transform: translateZ(60px) scale(1);
-    transform: translateZ(60px) scale(1);
+    transform: translateZ(60px) scale(1);*/
     top: 0;
     right: 0;
     left: 0;
@@ -260,11 +238,12 @@
 /*navigation styles*/
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 10;
 	padding-bottom: 20px;
 }
+
 header img {
     margin-top: 40px;
 }
@@ -315,8 +294,8 @@ nav#navigation ul li a {
     transition: all .5s;
 }
 
-
-@media only screen and (max-width: 750px) {
+/*tablet size nav styles*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
     header {
         background-color: #113559;
 		padding-bottom: 20px;
@@ -474,7 +453,15 @@ nav#navigation ul li a {
         border-color: white;
     }
 }
-@media only screen and (max-width: 500px) {
+
+/*mobile nav styles*/
+@media only screen and (max-width: 40em) {
+	
+	header {
+		z-index: 10 !important;
+        background-color: #113559;
+		padding-bottom: 20px;
+    }
     header img {
         margin-top: 10px;
         margin-left: 10px;
@@ -485,10 +472,161 @@ nav#navigation ul li a {
         position: absolute;
         width: 100%;
     }
+    nav#navigation {
+        margin-top: 10px;
+        margin-left: 80px;
+        position: absolute;
+        width: 90%;
+    }
+    nav#navigation .nav-trigger {
+        display: block;
+    }
+    nav#navigation .nav-trigger span {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 2px;
+        /*background color of menu lines*/        
+        background: #113559;
+        top: 18px;
+        left: 50%;
+        margin-left: -10px;
+        -webkit-transition: background .5s;
+        -moz-transition: background .5s;
+        transition: background .5s;
+    }
+    nav#navigation .nav-trigger span::before,
+    .nav-trigger span::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        background: inherit;
+        width: 100%;
+        height: 100%;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+    }
+    nav#navigation .nav-trigger span::before {
+        top: -6px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    nav#navigation .nav-trigger span::after {
+        bottom: -6px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    nav#navigation .nav-trigger.open span {
+        background: #a0dae5;
+    }
+    nav#navigation .nav-trigger.open span::before,
+    .nav-trigger.open span::after {
+        background: #113559;
+        /*changes color of x in menu icon*/
+    }
+    nav#navigation .nav-trigger.open span::before {
+        top: 0;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    nav#navigation .nav-trigger.open span::after {
+        bottom: 0;
+        -webkit-transform: rotate(225deg);
+        -moz-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        -o-transform: rotate(225deg);
+        transform: rotate(225deg);
+    }
+    nav#navigation ul {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 38px;
+        background: #113559;
+        visibility: hidden;
+        z-index: 10;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 100% 0;
+        -moz-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+        -o-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+        -webkit-transition: -webkit-transform 0.5s, visibility 0 .5s;
+        -moz-transition: -webkit-transform 0.5s, visibility 0 .5s;
+        transition: -webkit-transform 0.5s, visibility 0 .5s;
+    }
+    nav#navigation ul.is-visible {
+        visibility: visible;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: -webkit-transform 0.5s, visibility 0 0;
+        -moz-transition: -moz-transform 0.5s, visibility 0 0;
+        transition: transform 0.5s, visibility;
+    }
+    nav#navigation ul.is-visible li a {
+        visibility: visible;
+    }
+    nav#navigation ul li {
+        width: 50%;
+        margin: 0;
+    }
+    nav#navigation ul li a {
+        width: 100%;
+        padding: 10px 0;
+        color: #a0dae5;
+        visibility: hidden;
+        border-radius: 0;
+    }
+    nav#navigation ul li a:hover {
+        border: 10px;
+        border-color: #a0dae5;
+    }
+    nav#navigation ul li.last a {
+        background: none;
+        border: 10px;
+        border-color: white;
+        display: block;
+        padding: 15px 0;
+        color: #FFF;
+        font-size: .8em;
+    }
+    nav#navigation ul li.last a:hover {
+        border: 10px;
+        border-color: white;
+    }
+	
+	body {
+	z-index: 1;
+}
+
 }
 /*end of navigation styles*/
-
-
 
 
 
@@ -612,8 +750,7 @@ input[type=submit] {
 
 
 /*tablet size typography*/
-
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
     h1 {
         font-family: 'Lato', sans-serif;
         font-size: 40px;
@@ -626,6 +763,35 @@ input[type=submit] {
         font-weight: 300;
         color: #288c8e;
     }
+}
+
+/*mobile typography styles*/
+@media only screen and (max-width: 40em) {
+	
+	h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 40px;
+		line-height: 35px;
+		text-align: center;
+        font-weight: 700;
+        color: #288c8e;
+    }
+	
+	h2 {
+		text-align: center;
+		padding:0;
+		margin: 0;
+	}
+	
+	p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #113559;
+}
+		
+	
 }
 /*end of typography styles*/
 
@@ -744,34 +910,11 @@ footer a:hover {
 	transition: 0s !important;
 }
 
-.linked-in:hover {
-	fill: #288c8e;
-}
-
-.instagram:hover {
-	fill: #288c8e;
-}
-
-.facebook:hover {
-	fill: #288c8e;
-}
-
-svg {
-	width: 50px;
-}
-
-footer svg {
-	width: 40px;
-}
-
 /*end of hover styles*/
 
 
 
 /*spacing styles*/
-
-body {
-}
 
 header {
     margin-bottom: 50px;
@@ -902,8 +1045,7 @@ footer {
 }
 
 /*tablet spacing styles*/
-
-@media only screen and (max-width: 750px) {
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
 	
 	.brainstorm {
 		margin-top: -350px;
@@ -915,7 +1057,7 @@ footer {
 
 .project-buttons {
 	padding-top: 50px;
-	padding-bottom: 80px;
+	padding-bottom: 60px;
 }
 
 .project-buttons a {
@@ -930,7 +1072,11 @@ footer {
 }
 
 /*mobile spacing styles*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 40em) {
+
+h1 {
+	
+}
 
 #portfolio-projects {
 	padding-top: 20px;
@@ -939,34 +1085,42 @@ footer {
 
 .midwest-nuclear-research {
 	margin-top: 0px;
+	padding-bottom: 30px;
 }
 
 .san-antonio-zoo {
 	margin-top: 0px;
+	padding-bottom: 30px;
 }
 
 .gorilla-grocery {
 	margin-top: 0px;
+	padding-bottom: 30px;
 }
 
 .details {
 	padding-top: 0px;
+	padding-bottom: 30px;
 }
 
 .aegaeon {
 	margin-top: 0px;
+	padding-bottom: 30px;
 }
 
 .sweet-cellars {
 	margin-top: 0px;
+	padding-bottom: 30px;
 }
 
 .human {
 	padding-top: 0px;
+	padding-bottom: 30px;
 }
 
 .sourpuss-studio {
 	margin-top: 0px;
+	padding-bottom: 30px;
 }
 
 #about-space {
@@ -1004,7 +1158,7 @@ footer {
 }
 
 .project-description {
-	margin-top: 0px;
+	margin-top: 20px;
 }
 
 .project-description h1 {
@@ -1017,12 +1171,13 @@ footer {
 }
 
 .project-buttons {
-	padding-top: 50px;
-	padding-bottom: 80px;
+	margin-left: -20px;
+	margin-top: -30px;
+	padding-top: 20px;
 }
 
 .project-buttons a {
-	margin-left: 20px;
+	padding: 5px;
 }
 
 footer {
