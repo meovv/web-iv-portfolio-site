@@ -245,11 +245,9 @@ header {
 }
 
 header img {
-    margin-top: 40px;
+    margin-top: 30px;
 }
-nav li {
-    margin-top: 20px;
-}
+
 .navigation {
     /*change color of header background here*/
     
@@ -258,6 +256,7 @@ nav li {
     width: 80%;
     display: inline;
     /*z-index: 1 !important;*/
+	
 }
 nav#navigation {
     list-style: none;
@@ -280,6 +279,7 @@ nav#navigation .nav-trigger {
     cursor: pointer;
 }
 nav#navigation ul li {
+	padding-top: 20px;
     float: left;
     list-style: none;
     text-align: center;
@@ -305,6 +305,12 @@ nav#navigation ul li a {
         margin-left: 50px;
     }
     nav#navigation {
+        margin-top: 10px;
+        margin-left: 120px;
+        position: absolute;
+        width: 90%;
+    }
+	 nav#navigation {
         margin-top: 10px;
         margin-left: 120px;
         position: absolute;
@@ -425,7 +431,7 @@ nav#navigation ul li a {
         visibility: visible;
     }
     nav#navigation ul li {
-        width: 50%;
+        width: 100%;
         margin: 0;
     }
     nav#navigation ul li a {
@@ -466,17 +472,17 @@ nav#navigation ul li a {
         margin-top: 10px;
         margin-left: 10px;
     }
+	
+	nav#navigation ul li {
+		padding:;
+		width: 100%;
+	}
+	
     nav#navigation {
         margin-top: 10px;
-        margin-left: 80px;
+        margin-left: 40px;
         position: absolute;
         width: 100%;
-    }
-    nav#navigation {
-        margin-top: 10px;
-        margin-left: 80px;
-        position: absolute;
-        width: 90%;
     }
     nav#navigation .nav-trigger {
         display: block;
@@ -592,10 +598,6 @@ nav#navigation ul li a {
     nav#navigation ul.is-visible li a {
         visibility: visible;
     }
-    nav#navigation ul li {
-        width: 50%;
-        margin: 0;
-    }
     nav#navigation ul li a {
         width: 100%;
         padding: 10px 0;
@@ -631,6 +633,8 @@ nav#navigation ul li a {
 
 
 /*typography styles*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
 h1 {
     font-family: 'Lato', sans-serif;
